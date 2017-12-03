@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <EditText
+        android:id="@+id/edittext_ipaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/rounded_rectangle_edittext"
+        android:hint="IP Address"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorLightHint"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButtonPrimary"
+        android:onClick="onLoginClick"
+        android:padding="10dp"
+        android:text="LOGIN"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/edittext_ipaddress"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

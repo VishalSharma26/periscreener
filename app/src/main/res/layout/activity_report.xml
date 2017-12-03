@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERISCREENER"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tv_mr_number_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MR Number : P-123456"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorWhite"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:id="@+id/tv_age_id"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Age : 71"
+                        android:textColor="@color/colorWhite"/>
+
+                    <TextView
+                        android:id="@+id/tv_eye_id"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Eye : Right"
+                        android:textColor="@color/colorWhite"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test type : Supra threshold 24-2"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorWhite"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fixation Monitor : Blind Spot"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="#303030"
+            android:padding="10dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_fixation_loss_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fixation Loss : 0 / 10"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv_falsePositive_points_id"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="False Positive : 0 /10"
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv_falseNegative_points_id"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="False Negative : 0 "
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv_test_duration_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Test duration : "
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv_backgroung_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Background"
+                        android:textColor="@color/colorWhite"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_date_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Date : "
+                            android:textColor="@color/colorWhite"/>
+                        <TextView
+                            android:id="@+id/tv_time_id"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Time : "
+                            android:textColor="@color/colorWhite"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Place : "
+                            android:textColor="@color/colorWhite"/>
+                        <TextView
+                            android:id="@+id/tv_place_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text=""
+                            android:textColor="@color/colorWhite"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Share"
+                        android:textColor="#303030"
+                        android:onClick="onShareReport"
+                        android:background="@drawable/card_layout_grey"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linear_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageView_id"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+</LinearLayout>
